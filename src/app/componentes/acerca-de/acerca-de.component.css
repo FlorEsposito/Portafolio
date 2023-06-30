@@ -1,0 +1,9 @@
+div.sectorEdicion{
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+input.inputInfo{
+    width: 1000px;
+    margin-right: 30px;
+}

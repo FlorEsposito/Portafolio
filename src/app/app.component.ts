@@ -7,7 +7,7 @@ import firebase from 'firebase/compat/app';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PortafolioWebFrontEnd';
+  title = 'PortafolioWeb-Florencia';
 
   ngOnInit():void{
     firebase.initializeApp({
