@@ -1,6 +1,7 @@
 import { Component, Injectable } from '@angular/core';
 import { Location } from '@angular/common';
 import { NgForm } from '@angular/forms';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +11,7 @@ import { NgForm } from '@angular/forms';
 
 @Injectable()
 export class LoginComponent {
-    constructor(private location: Location) {}
-  
-      private habilitarBotones:boolean = false;
-
-      public getHabilitar(): boolean{
-        return this.habilitarBotones;
-      }
+    constructor(private location:Location, private loginService:LoginService) {}
       
       goBack(): void {
         this.location.back();
@@ -25,6 +20,7 @@ export class LoginComponent {
       login(form:NgForm){
           const usuario=form.value.usuario;
           const contrasenia=form.value.password;
-          
+          this.loginService.login(usuario, contrasenia);
+          if (this.loginService.estaLogueado()){this.goBack()};
       }
 }

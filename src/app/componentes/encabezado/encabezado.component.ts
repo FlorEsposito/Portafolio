@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-encabezado',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent {
-      login:string = "Login";
+      constructor(private loginService:LoginService){}
+
+      Login(){
+        return this.loginService.estaLogueado();
+      }
+
+      Logout(){
+        this.loginService.logout();
+      }
 }

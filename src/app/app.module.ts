@@ -15,6 +15,9 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { PieComponent } from './componentes/pie/pie.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { DataServices } from './data.service';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LoginService } from './componentes/login/login.service';
+import { ManejoDatos } from './manejo.datos';
 
 
 const appRoutes=[
@@ -39,8 +42,9 @@ const appRoutes=[
     FormsModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
-  providers: [DataServices,LoginComponent],
+  providers: [DataServices, LoginComponent, LoginService, ManejoDatos],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

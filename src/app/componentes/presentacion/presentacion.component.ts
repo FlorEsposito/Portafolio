@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from '../login/login.component';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-presentacion',
@@ -7,9 +7,12 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent {
-  constructor(private loginComponent:LoginComponent){}
+  constructor(private loginService:LoginService){}
   
-  login:boolean = this.loginComponent.getHabilitar()
+  login(){
+    return this.loginService.estaLogueado();
+  }
+   
   datosPresentacion:string[] = [
   "./assets/fotoPerfil.jpeg", 
   'Florencia Esposito' ,

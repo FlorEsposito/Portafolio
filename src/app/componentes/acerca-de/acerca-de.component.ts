@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from 'src/app/componentes/login/login.component';
+import { LoginService } from '../login/login.service';
+
 
 @Component({
   selector: 'app-acerca-de',
@@ -8,6 +9,9 @@ import { LoginComponent } from 'src/app/componentes/login/login.component';
 })
 
 export class AcercaDeComponent {
-  constructor(private loginComponent:LoginComponent){}
-  login:boolean = this.loginComponent.getHabilitar()
+  constructor(private loginService:LoginService){}
+
+  login(){
+    return this.loginService.estaLogueado();
+  } 
 }

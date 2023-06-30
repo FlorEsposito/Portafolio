@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from '../login/login.component';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-hard-ysoft-skills',
@@ -7,6 +7,9 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./hard-ysoft-skills.component.css']
 })
 export class HardYSoftSkillsComponent {
-  constructor(private loginComponent:LoginComponent){}
-  login:boolean = this.loginComponent.getHabilitar()
+  constructor(private loginService:LoginService){}
+
+  login(){
+    return this.loginService.estaLogueado();
+  }
 }

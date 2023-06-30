@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import firebase from 'firebase/compat/app';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PortafolioWebFrontEnd';
+
+  ngOnInit():void{
+    firebase.initializeApp({
+      apiKey: "AIzaSyBqNwmigj7cN3vpiFKq2ntNc8AeJ1_sCMU",
+      authDomain: "portafolio-web-411d6.firebaseapp.com"
+    })
+  }
 }

@@ -3,19 +3,19 @@
   
       <div class="row">
   
-        <div class="col-1">
-          <img src="./assets/logogatito.jpg" class="rounded float-start logoprincial" width="50%" height="90%" alt="mi_logo">
+        <div class="col-sm-1 col-md-1 col-lg-1">
+          <img src="./assets/logogatito.jpg" class="rounded float-start logoprincipal" alt="mi_logo">
           
         </div>
   
-        <div class="col-2">
+        <div class="col-sm-2 col-md-2 col-lg-2">
           <span class="argentinaPrograma">Argentina Programa </span>
           <span class="argentinaPrograma">#YoProgramo</span>
         </div>
   
-        <div class="col-6">  </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">  </div>
         
-        <div class="col-2"> 
+        <div class="col-sm-2 col-md-2 col-lg-2"> 
         
           <a href="https://www.facebook.com/florry.styles.5?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="quitarhover">
             <i title="facebook" class="fa-brands fa-square-facebook icono"></i>
@@ -33,10 +33,15 @@
           
 
         </div> 
-        <div class="col-1"> 
-          <button class="login">
+        <div class="col-sm-1 col-md-1 col-lg-1"> 
+          <button class="login" *ngIf="!Login()">
             <a class="quitarhover" routerLink="/login">
-              {{login}}
+              Login
+            </a> 
+          </button>
+          <button class="login" *ngIf="Login()">
+            <a class="quitarhover" (click)="Logout()">
+              Logout
             </a> 
           </button>
         </div>

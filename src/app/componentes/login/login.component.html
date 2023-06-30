@@ -4,15 +4,15 @@
       <i class="fa-solid fa-xmark icono"></i>
     </button>
   </div>
-  <form action="post">
+  <form action="post" #miformulario="ngForm" (ngSubmit)="login(miformulario)">
     <div class="form-control">
       <label for="text"> Usuario </label>
-      <input type="text" name="usuario" id="text" placeholder="ingrese el Usuario">
+      <input type="text" name="usuario" id="text" placeholder="ingrese el Usuario" ngModel>
     </div>
 
     <div class="form-control">
       <label for="password"> Contraseña </label>
-      <input type="password" name="password" id="password" placeholder="ingrese la Contraseña">
+      <input type="password" name="password" id="password" placeholder="ingrese la Contraseña" ngModel>
     </div>
 
     <button type="submit" class="entrar"> Entrar </button>

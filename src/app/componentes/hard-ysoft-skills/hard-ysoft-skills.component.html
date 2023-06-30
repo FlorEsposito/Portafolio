@@ -1,76 +1,267 @@
-<div class="hard&SoftSkills formato pading">
+<div class="hard&SoftSkills formato pading row">
     <h1>Hard & Soft skills</h1>
     <div>
       <h6 class="subtitulo subtitulo2"> Soft Skills </h6>
-      <button class="edit" title="Agregar" *ngIf="login">
+      <button class="edit" title="Agregar" *ngIf="login()">
         <i class="fa-regular fa-pen-to-square edit"></i>
       </button>
     </div>
-    <ul class="lista itemsHorizontal skills">
 
-      <li class="pading">
-        <img src="./assets/liderazgo.jpg" class="logoSoftSkills">
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'violet'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [imageSrc]="'../assets/liderazgo.jpg'"
+        [showImage]="true"
+        [imageHeight]="100"
+        [imageWidth]="110"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading">
-        <img src="./assets/gestionDelTiempo.jpg" class="logoSoftSkills"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'violet'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [imageSrc]="'../assets/gestionDelTiempo.jpg'"
+        [showImage]="true"
+        [imageHeight]="100"
+        [imageWidth]="110"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading">
-        <img src="./assets/pensamientoCritico.jpg" class="logoSoftSkills"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button> 
-      </li>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'violet'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [imageSrc]="'../assets/pensamientoCritico.jpg'"
+        [showImage]="true"
+        [imageHeight]="100"
+        [imageWidth]="110"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading">
-        <img src="./assets/creatividad.jpg" class="logoSoftSkills">
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
-      
-      <li class="pading">
-        <img src="./assets/capacidadResolutiva.jpg" class="logoSoftSkills"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li> 
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'violet'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [imageSrc]="'../assets/creatividad.jpg'"
+        [showImage]="true"
+        [imageHeight]="100"
+        [imageWidth]="110"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
+     
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'violet'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [imageSrc]="'../assets/capacidadResolutiva.jpg'"
+        [showImage]="true"
+        [imageHeight]="100"
+        [imageWidth]="110"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-    </ul>
     <div>
       <h6 class="subtitulo subtitulo2"> Hard Skills </h6>
-      <button class="edit" title="Agregar" *ngIf="login">
+      <button class="edit" title="Agregar" *ngIf="login()">
         <i class="fa-regular fa-pen-to-square edit"></i>
       </button>
     </div>
-    <ul class="lista itemsHorizontal skills">
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'Habilidades administrativas'"
+        [subtitleFontSize]="'12'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading"><img src="./assets/habilidadesAdministrativas.png" class="logo1"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'HTML'"
+        [subtitleFontSize]="'20'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading">
-        <img src="./assets/habilidadesDeProgramacion.png" class="logo2"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="85"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'CSS'"
+        [subtitleFontSize]="'20'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-      <li class="pading">
-        <img src="./assets/disenioDePaginasWeb.png" class="logo2"> 
-        <button class="edit editSkills" title="Borrar" *ngIf="login">
-          <i class="fa-regular fa-trash-can edit"></i>
-        </button>
-      </li>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3">
+      <circle-progress
+        [percent]="70"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'TypeScript'"
+        [subtitleFontSize]="'15'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 
-    </ul>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3">
+      <circle-progress
+        [percent]="70"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'MySQL'"
+        [subtitleFontSize]="'20'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
+
+    <div class="text-center col-sm-3 col-md-3 col-lg-3">
+      <circle-progress
+        [percent]="85"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'FireBase'"
+        [subtitleFontSize]="'15'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
+
+    <div class="text-center col-sm-3 col-md-3 col-lg-3">
+      <circle-progress
+        [percent]="85"
+        [radius]="70"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'grey'"
+        [innerStrokeColor]="'pink'"
+        [backgroundColor]="'white'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'black'"
+        [subtitle]="'FrontEnd'"
+        [subtitleFontSize]="'15'"
+        [subtitleColor]="'black'"
+      ></circle-progress>
+      <button class="edit editSkills" title="Borrar" *ngIf="login()">
+        <i class="fa-regular fa-trash-can edit"></i>
+      </button>
+    </div>
 </div>

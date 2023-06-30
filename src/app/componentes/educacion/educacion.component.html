@@ -1,6 +1,6 @@
 <div class="educacion formato pading">
     <h1 class="titulo">Educacion</h1>
-    <button class="edit" title="Agregar" *ngIf="login">
+    <button class="edit" title="Agregar" *ngIf="login()">
       <i class="fa-regular fa-pen-to-square edit"></i>
     </button>
     <ul class="lista">
@@ -8,7 +8,7 @@
         <ul class="lista itemsHorizontal">
           <li> 
             <img class="logo" src="./assets/IGMR.png">
-            <button class="edit editLogo" *ngIf="login">
+            <button class="edit editLogo" *ngIf="login()">
               <i class="fa-regular fa-pen-to-square edit" title="Editar"></i>
             </button>
           </li>
@@ -17,10 +17,10 @@
               <li>Secundario en Instituto General Martin Rodriguez (IGMR)</li>
               <li>Bachiller en Economia y Administracion</li>
               <li>Finalizado en el año 2018</li>
-              <button class="edit" title="Editar" *ngIf="login">
+              <button class="edit" title="Editar" *ngIf="login()">
                 <i class="fa-regular fa-pen-to-square edit"></i>
               </button>
-              <button class="edit" title="Borrar" *ngIf="login">
+              <button class="edit" title="Borrar" *ngIf="login()">
                 <i class="fa-regular fa-trash-can edit"></i>
               </button>
             </ul> 
@@ -32,7 +32,7 @@
         <ul class="lista itemsHorizontal">
           <li> 
             <img class="logo" src="./assets/UNLu.png">
-            <button class="edit editLogo" title="Editar" *ngIf="login">
+            <button class="edit editLogo" title="Editar" *ngIf="login()">
               <i class="fa-regular fa-pen-to-square edit"></i>
             </button>
           </li>
@@ -41,10 +41,10 @@
               <li>Universidad Nacional de Luján (UNLu) </li>
               <li>Estudiante de la carrera Licenciatura en Administracion.</li>
               <li>2019 - Actualidad</li>
-              <button class="edit" title="Editar" *ngIf="login">
+              <button class="edit" title="Editar" *ngIf="login()">
                 <i class="fa-regular fa-pen-to-square edit"></i>
               </button>
-              <button class="edit" title="Borrar" *ngIf="login">
+              <button class="edit" title="Borrar" *ngIf="login()">
                 <i class="fa-regular fa-trash-can edit"></i>
               </button>
             </ul>
@@ -56,7 +56,7 @@
         <ul class="lista itemsHorizontal">
           <li> 
             <img class="logo" src="./assets/UNLu.png">
-            <button class="edit editLogo" title="Editar" *ngIf="login">
+            <button class="edit editLogo" title="Editar" *ngIf="login()">
               <i class="fa-regular fa-pen-to-square edit"></i>
             </button>
           </li>
@@ -65,10 +65,10 @@
               <li>Universidad Nacional de Luján (UNLu) </li>
               <li>Estudiante de la carrera Contador Publico.</li>
               <li>2022 - Actualidad</li>
-              <button class="edit" title="Editar" *ngIf="login">
+              <button class="edit" title="Editar" *ngIf="login()">
                 <i class="fa-regular fa-pen-to-square edit"></i>
               </button>
-              <button class="edit" title="Borrar" *ngIf="login">
+              <button class="edit" title="Borrar" *ngIf="login()">
                 <i class="fa-regular fa-trash-can edit"></i>
               </button>
             </ul>
@@ -80,7 +80,7 @@
         <ul class="lista itemsHorizontal">
           <li> 
             <img class="logo" src="./assets/ArgPrograma.jpg">
-            <button class="edit editLogo" *ngIf="login">
+            <button class="edit editLogo" *ngIf="login()">
               <i class="fa-regular fa-pen-to-square edit" title="Editar"></i>
             </button>
           </li>
@@ -89,10 +89,10 @@
               <li>Argentina Programa</li>
               <li>Desarrollador Full Stack Developer Jr.</li>
               <li>Año 2023</li>
-              <button class="edit" title="Editar" *ngIf="login">
+              <button class="edit" title="Editar" *ngIf="login()">
                 <i class="fa-regular fa-pen-to-square edit"></i>
               </button>
-              <button class="edit" title="Borrar" *ngIf="login">
+              <button class="edit" title="Borrar" *ngIf="login()">
                 <i class="fa-regular fa-trash-can edit"></i>
               </button>
             </ul>

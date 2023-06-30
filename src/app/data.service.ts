@@ -7,10 +7,10 @@ export class DataServices{
     constructor(private httpClient:HttpClient){}
 
     guardarDatos(datos:string[]){
-        this.httpClient.post('https://portafolio-web-411d6-default-rtdb.firebaseio.com/datos.json',datos).subscribe(
-            response => console.log("Guardado correctamente"),
-            error => console.log("Error"),
-        );
+        this.httpClient.post('https://portafolio-web-411d6-default-rtdb.firebaseio.com/datos.json',datos).subscribe({
+            next:(v) => console.log("Guardado correctamente" + v),
+            error:(e) => console.log("Error" + e),
+        });
     }
 
 }

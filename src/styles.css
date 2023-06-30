@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*@media{}*/
+
 h1.nombre{
     font-weight:bolder;
     margin-left: 7px;    
@@ -17,7 +20,7 @@ div.encabezado{
 
 div.pie{
     margin-top:15px;
-    height:45px;
+    height:50px;
 }
 
 div.encabezadoYPie{
@@ -41,7 +44,7 @@ body.cuerpo{
 
 div.formato{
     background-color: #FFF1F4F2;
-    border-color: rgb(255, 192, 230);
+    border-color: #ffc0e6;
     color:#444040;
     margin-right: 50px;
     margin-left: 50px;
@@ -97,12 +100,14 @@ img.fotoPerfil{
     border-radius:100%;
 }
 img.logoprincipal{
-    margin-left: 20px;
-    margin-top:3px;
+    margin-left: 30px;
+    margin-top: 1px;
+    height: 43px;
+    width: 50px;
 }
 
 span.argentinaPrograma{
-    margin-left:-20px;
+    margin-left:-5px;
 }
 
 button.edit{
@@ -215,20 +220,24 @@ i.fa-house, i.fa-phone{
     position:relative;
 }
 
-i.fa-house{
-    left:45px;
-}
-
 i.fa-phone{
     left:0px;
+}
+
+i.fa-house{
+    top:-5px;
 }
 
 i.edit{
     font-size:30px;
 }
 
-div.col-1 , div.col-2{
+div.col-1 , div.col-2,div.col-sm-3{
     padding:0px;
+}
+
+div.direccion{
+    display:inline-block;
 }
 
 ul.lista{
